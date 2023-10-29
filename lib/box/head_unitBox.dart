@@ -1,8 +1,3 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:maths_games/box/text_field.dart';
 import 'package:maths_games/constant/color.dart';
 
 Widget headUnitBoxMiddle(String unit) {
@@ -108,20 +103,15 @@ Widget answerBoxSide() {
       decoration: BoxDecoration(
           color: Color.fromARGB(255, 141, 203, 255),
           border: Border(bottom: boxBorder, right: boxBorder, left: boxBorder)),
-      child: 
-      // answerBoxSideclass()
-      Center(
-          child:
-           TextField(
+      child:
+          // answerBoxSideclass()
+          Center(
+              child: TextField(
         controller: _textControllerRight,
         keyboardType: TextInputType.number,
         decoration: InputDecoration(border: InputBorder.none),
-      ))
-      );
+      )));
 }
-
-
-
 
 // Widget answerBoxSide() {
 //   final _textController = TextEditingController();

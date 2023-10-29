@@ -5,7 +5,6 @@ import 'package:get/get.dart';
 import 'package:maths_games/constant/color.dart';
 import 'package:maths_games/controller/notch_controller.dart';
 import 'package:maths_games/screen/home_screem/home_screen.dart';
-import 'package:flutter_device_type/flutter_device_type.dart';
 
 Future main() async {
   final notchController = Get.put(NotchController());
@@ -39,7 +38,6 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       home: home_Screen(),
-      
     );
   }
 }
